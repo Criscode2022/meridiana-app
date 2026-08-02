@@ -1,0 +1,13 @@
+{
+  "name": "meridiana-app",
+  "private": true,
+  "scripts": {
+    "api": "npm --prefix apps/api run start:dev",
+    "web": "npm --prefix apps/web run start",
+    "api:build": "npm --prefix apps/api run build",
+    "web:build": "npm --prefix apps/web run build",
+    "db:migrate": "npm --prefix apps/api run prisma:migrate",
+    "db:seed": "npm --prefix apps/api run prisma:seed",
+    "db:generate": "npm --prefix apps/api run prisma:generate"
+  }
+}
